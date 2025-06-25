@@ -1,11 +1,25 @@
-
 import { Shield, Terminal, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-slate-900 to-gray-900 text-white relative overflow-hidden">
-      {/* Animated background elements */}
+      {/* Slow moving particles */}
+      <div className="absolute inset-0 opacity-20">
+        {/* Floating particles with very slow movement */}
+        <div className="absolute top-10 left-10 w-1 h-1 bg-cyan-400 rounded-full animate-[float-slow_25s_ease-in-out_infinite]"></div>
+        <div className="absolute top-32 right-20 w-1.5 h-1.5 bg-blue-400 rounded-full animate-[float-slow_30s_ease-in-out_infinite_reverse]"></div>
+        <div className="absolute top-64 left-1/4 w-1 h-1 bg-teal-400 rounded-full animate-[float-slow_35s_ease-in-out_infinite]"></div>
+        <div className="absolute bottom-40 right-1/3 w-2 h-2 bg-green-400/60 rounded-full animate-[drift-slow_40s_linear_infinite]"></div>
+        <div className="absolute top-1/2 left-16 w-1 h-1 bg-cyan-300 rounded-full animate-[drift-slow_28s_linear_infinite_reverse]"></div>
+        <div className="absolute bottom-64 right-16 w-1.5 h-1.5 bg-blue-300 rounded-full animate-[float-slow_32s_ease-in-out_infinite]"></div>
+        <div className="absolute top-20 left-2/3 w-1 h-1 bg-teal-300 rounded-full animate-[drift-slow_45s_linear_infinite]"></div>
+        <div className="absolute bottom-20 left-1/2 w-1 h-1 bg-cyan-400/80 rounded-full animate-[float-slow_38s_ease-in-out_infinite_reverse]"></div>
+        <div className="absolute top-80 right-1/4 w-1.5 h-1.5 bg-blue-400/70 rounded-full animate-[drift-slow_33s_linear_infinite_reverse]"></div>
+        <div className="absolute bottom-32 left-20 w-1 h-1 bg-green-300 rounded-full animate-[float-slow_42s_ease-in-out_infinite]"></div>
+      </div>
+      
+      {/* Existing animated background elements */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 left-20 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
         <div className="absolute top-40 right-32 w-1 h-1 bg-green-400 rounded-full animate-pulse delay-1000"></div>
