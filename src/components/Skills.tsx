@@ -43,20 +43,20 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-20 bg-slate-800 text-white">
+    <section className="py-20 bg-black text-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
             Core Expertise
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Comprehensive cybersecurity skills across multiple domains and technologies
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="bg-slate-700/50 border-slate-600 hover:bg-slate-700/70 transition-all duration-300 hover:scale-105 group">
+            <Card key={index} className="bg-gray-900/80 border-gray-700 hover:bg-gray-900 transition-all duration-300 hover:scale-105 group shadow-xl">
               <CardHeader className="text-center">
                 <category.icon className={`w-12 h-12 mx-auto mb-4 ${category.color} group-hover:scale-110 transition-transform duration-300`} />
                 <CardTitle className="text-white text-xl">{category.title}</CardTitle>
@@ -66,7 +66,7 @@ const Skills = () => {
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skillIndex} className="flex items-center space-x-2">
                       <div className={`w-2 h-2 rounded-full ${category.color.replace('text-', 'bg-')}`}></div>
-                      <span className="text-gray-300">{skill}</span>
+                      <span className="text-gray-400">{skill}</span>
                     </div>
                   ))}
                 </div>

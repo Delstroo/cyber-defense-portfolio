@@ -4,13 +4,16 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-slate-900 to-gray-900 text-white relative overflow-hidden">
       {/* Animated background elements */}
-      <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 left-20 w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
         <div className="absolute top-40 right-32 w-1 h-1 bg-green-400 rounded-full animate-pulse delay-1000"></div>
         <div className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse delay-500"></div>
         <div className="absolute bottom-20 right-20 w-2 h-2 bg-teal-400 rounded-full animate-pulse delay-700"></div>
+        {/* Additional dark theme elements */}
+        <div className="absolute top-1/2 left-10 w-px h-20 bg-gradient-to-b from-transparent via-cyan-500/20 to-transparent"></div>
+        <div className="absolute top-1/4 right-10 w-px h-32 bg-gradient-to-b from-transparent via-blue-500/20 to-transparent"></div>
       </div>
       
       <div className="container mx-auto px-6 text-center relative z-10">
@@ -24,15 +27,15 @@ const Hero = () => {
           Cybersecurity Expert
         </h1>
         
-        <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto animate-fade-in delay-300">
+        <p className="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto animate-fade-in delay-300">
           Protecting digital assets through advanced threat detection, incident response, and security architecture
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-500">
-          <Button size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105">
+          <Button size="lg" className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg shadow-cyan-500/25">
             View My Work
           </Button>
-          <Button variant="outline" size="lg" className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105">
+          <Button variant="outline" size="lg" className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-8 py-3 rounded-lg transition-all duration-300 hover:scale-105 bg-transparent">
             Download Resume
           </Button>
         </div>
