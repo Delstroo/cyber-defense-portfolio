@@ -5,109 +5,121 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Threat Detection & Analysis",
+      title: "Neural Threat Detection",
       icon: Eye,
-      skills: ["SIEM Management", "Malware Analysis", "Digital Forensics", "Threat Intelligence"],
+      skills: ["AI-Enhanced SIEM", "Malware Dissection", "Digital Necromancy", "Neural Intelligence"],
       color: "text-red-400",
-      glowColor: "rgba(248, 113, 113, 0.3)"
+      glowColor: "rgba(255, 0, 0, 0.4)",
+      borderColor: "border-red-400/50"
     },
     {
-      title: "Security Architecture",
+      title: "Cyber Architecture",
       icon: Shield,
-      skills: ["Zero Trust Implementation", "Network Security", "Cloud Security", "Risk Assessment"],
+      skills: ["Zero-Trust Protocols", "Network Fortress", "Cloud Sovereignty", "Risk Algorithms"],
       color: "text-cyan-400",
-      glowColor: "rgba(6, 182, 212, 0.3)"
+      glowColor: "rgba(0, 255, 255, 0.4)",
+      borderColor: "border-cyan-400/50"
     },
     {
-      title: "Incident Response",
+      title: "Crisis Response Unit",
       icon: AlertTriangle,
-      skills: ["Crisis Management", "Breach Investigation", "Recovery Planning", "Communication"],
+      skills: ["Neural Crisis Control", "Breach Autopsy", "System Resurrection", "Corporate Liaison"],
       color: "text-yellow-400",
-      glowColor: "rgba(250, 204, 21, 0.3)"
+      glowColor: "rgba(255, 255, 0, 0.4)",
+      borderColor: "border-yellow-400/50"
     },
     {
-      title: "Penetration Testing",
+      title: "Penetration Warfare",
       icon: Terminal,
-      skills: ["Vulnerability Assessment", "Web App Testing", "Network Penetration", "Social Engineering"],
+      skills: ["Vulnerability Mining", "Web App Dissection", "Network Infiltration", "Social Engineering"],
       color: "text-green-400",
-      glowColor: "rgba(34, 197, 94, 0.3)"
+      glowColor: "rgba(0, 255, 0, 0.4)",
+      borderColor: "border-green-400/50"
     },
     {
-      title: "Compliance & Governance",
+      title: "Corporate Compliance",
       icon: Lock,
-      skills: ["GDPR", "SOX", "HIPAA", "ISO 27001", "Risk Management"],
+      skills: ["GDPR Protocol", "SOX Interface", "HIPAA Encryption", "ISO 27001", "Risk Matrices"],
       color: "text-blue-400",
-      glowColor: "rgba(59, 130, 246, 0.3)"
+      glowColor: "rgba(0, 100, 255, 0.4)",
+      borderColor: "border-blue-400/50"
     },
     {
-      title: "Technical Skills",
+      title: "Neural Coding",
       icon: Code,
-      skills: ["Python", "PowerShell", "Linux", "Wireshark", "Metasploit", "Burp Suite"],
+      skills: ["Python Scripts", "PowerShell Core", "Linux Terminal", "Wireshark Deep", "Metasploit Pro", "Burp Suite Elite"],
       color: "text-purple-400",
-      glowColor: "rgba(168, 85, 247, 0.3)"
+      glowColor: "rgba(128, 0, 255, 0.4)",
+      borderColor: "border-purple-400/50"
     }
   ];
 
   return (
     <section id="skills" className="py-20 bg-black text-white relative overflow-hidden">
-      {/* Enhanced futuristic background elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full animate-[gradient-shift_15s_ease-in-out_infinite]" style={{
+      {/* Cyberpunk background patterns */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 animate-neural-grid" style={{
           backgroundImage: `
-            radial-gradient(circle at 25% 25%, rgba(6, 182, 212, 0.15) 0%, transparent 50%),
-            radial-gradient(circle at 75% 75%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
-            radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.1) 0%, transparent 50%)
+            radial-gradient(circle at 25% 25%, rgba(0, 255, 255, 0.15) 0%, transparent 50%),
+            radial-gradient(circle at 75% 75%, rgba(255, 0, 255, 0.15) 0%, transparent 50%),
+            radial-gradient(circle at 50% 50%, rgba(255, 255, 0, 0.1) 0%, transparent 50%)
           `
         }}></div>
       </div>
       
-      {/* Enhanced animated circuit lines */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-10 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent animate-[circuit-flow_8s_ease-in-out_infinite]"></div>
-        <div className="absolute bottom-10 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-400/40 to-transparent animate-[circuit-flow_10s_ease-in-out_infinite_reverse]"></div>
-        <div className="absolute left-10 top-0 w-px h-full bg-gradient-to-b from-transparent via-teal-400/40 to-transparent animate-[circuit-flow-vertical_12s_ease-in-out_infinite]"></div>
-        <div className="absolute right-10 top-0 w-px h-full bg-gradient-to-b from-transparent via-green-400/40 to-transparent animate-[circuit-flow-vertical_14s_ease-in-out_infinite_reverse]"></div>
+      {/* Digital circuit lines */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-10 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent animate-data-stream-horizontal"></div>
+        <div className="absolute bottom-10 left-0 w-full h-px bg-gradient-to-r from-transparent via-magenta-400/60 to-transparent animate-data-stream-horizontal-reverse"></div>
+        <div className="absolute left-10 top-0 w-px h-full bg-gradient-to-b from-transparent via-yellow-400/60 to-transparent animate-data-stream-vertical"></div>
+        <div className="absolute right-10 top-0 w-px h-full bg-gradient-to-b from-transparent via-green-400/60 to-transparent animate-data-stream-vertical-reverse"></div>
         
-        {/* Floating tech elements */}
-        <div className="absolute top-1/4 left-1/4 w-6 h-6 border border-cyan-400/30 rotate-45 animate-[float-rotate_20s_ease-in-out_infinite] shadow-[0_0_20px_rgba(6,182,212,0.3)]"></div>
-        <div className="absolute bottom-1/3 right-1/3 w-4 h-4 border border-purple-400/30 rounded-full animate-[float-slow_25s_ease-in-out_infinite] shadow-[0_0_15px_rgba(168,85,247,0.3)]"></div>
+        {/* Floating neural nodes */}
+        <div className="absolute top-1/4 left-1/4 w-8 h-8 border-2 border-cyan-400/40 rotate-45 animate-neural-rotate shadow-[0_0_20px_rgba(0,255,255,0.4)]"></div>
+        <div className="absolute bottom-1/3 right-1/3 w-6 h-6 border-2 border-magenta-400/40 rounded-full animate-neural-pulse shadow-[0_0_15px_rgba(255,0,255,0.4)]"></div>
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(6,182,212,0.5)] animate-[fade-slide-up_1s_ease-out]">
-            Core Expertise
+          <h2 className="text-4xl md:text-5xl font-mono font-bold mb-4 bg-gradient-to-r from-cyan-400 to-magenta-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(0,255,255,0.5)] animate-title-glitch relative">
+            <span className="relative">
+              NEURAL PROTOCOLS
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-magenta-400 bg-clip-text text-transparent animate-text-corruption opacity-20"></div>
+            </span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto backdrop-blur-sm bg-black/20 p-4 rounded-lg border border-gray-700/30 animate-[fade-slide-up_1s_ease-out_0.3s_both] transition-all duration-500 hover:bg-black/30 hover:border-gray-600/40">
-            Comprehensive cybersecurity skills across multiple domains and technologies
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto backdrop-blur-sm bg-black/40 p-4 rounded-lg border border-cyan-400/30 animate-text-fade font-mono transition-all duration-500 hover:bg-black/60 hover:border-magenta-400/40">
+            ENHANCED CYBERSECURITY PROTOCOLS ACROSS MULTIPLE NEURAL NETWORKS
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="bg-black/60 backdrop-blur-sm border-gray-700/50 hover:bg-black/80 transition-all duration-500 hover:scale-105 group shadow-2xl hover:shadow-[0_0_40px_rgba(6,182,212,0.2)] border-2 hover:border-cyan-400/30 animate-[fade-slide-up_1s_ease-out] transform hover:-translate-y-2" style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'both' }}>
-              <CardHeader className="text-center">
-                <div className={`w-16 h-16 mx-auto mb-4 rounded-full bg-black/40 backdrop-blur-sm border flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-12`} 
+            <Card key={index} className={`bg-black/80 backdrop-blur-sm ${category.borderColor} border-2 hover:bg-black/90 transition-all duration-500 hover:scale-105 group shadow-2xl hover:shadow-[0_0_40px_${category.glowColor}] animate-card-boot transform hover:-translate-y-2 relative overflow-hidden`} style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'both' }}>
+              {/* Card glitch overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-400/5 via-transparent to-magenta-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-subtle-glitch"></div>
+              
+              <CardHeader className="text-center relative z-10">
+                <div className={`w-16 h-16 mx-auto mb-4 rounded-lg bg-black/60 backdrop-blur-sm border-2 ${category.borderColor} flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 animate-icon-pulse`} 
                      style={{ 
-                       borderColor: category.color.replace('text-', 'rgb(') + ', 0.3)',
                        boxShadow: `0 0 30px ${category.glowColor}`
                      }}>
                   <category.icon className={`w-8 h-8 ${category.color} transition-all duration-500 group-hover:scale-110`} 
                                  style={{ filter: `drop-shadow(0 0 10px ${category.glowColor})` }} />
                 </div>
-                <CardTitle className="text-white text-xl transition-all duration-300 group-hover:text-cyan-400">{category.title}</CardTitle>
+                <CardTitle className="text-white text-xl transition-all duration-300 group-hover:text-cyan-400 font-mono uppercase tracking-wider">{category.title}</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="relative z-10">
                 <div className="space-y-3">
                   {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="flex items-center space-x-3 p-2 rounded-lg bg-black/30 backdrop-blur-sm border border-gray-700/30 hover:border-gray-600/50 transition-all duration-500 hover:bg-black/50 hover:scale-105 hover:shadow-[0_0_15px_rgba(6,182,212,0.1)]">
-                      <div className={`w-2 h-2 rounded-full animate-pulse`} 
+                    <div key={skillIndex} className="flex items-center space-x-3 p-3 rounded-lg bg-black/60 backdrop-blur-sm border border-gray-700/50 hover:border-cyan-400/50 transition-all duration-500 hover:bg-black/80 hover:scale-105 hover:shadow-[0_0_15px_rgba(0,255,255,0.2)] animate-skill-load" style={{ animationDelay: `${(index * 0.1) + (skillIndex * 0.05)}s` }}>
+                      <div className={`w-3 h-3 rounded-full animate-neural-pulse`} 
                            style={{ 
                              backgroundColor: category.color.replace('text-', '').replace('-400', ''),
                              boxShadow: `0 0 8px ${category.glowColor}`,
                              animationDelay: `${skillIndex * 0.2}s`
                            }}></div>
-                      <span className="text-gray-300 transition-colors duration-300 hover:text-white">{skill}</span>
+                      <span className="text-gray-300 transition-colors duration-300 hover:text-white font-mono text-sm">{skill}</span>
+                      <div className="flex-1 h-px bg-gradient-to-r from-gray-700 to-transparent"></div>
                     </div>
                   ))}
                 </div>

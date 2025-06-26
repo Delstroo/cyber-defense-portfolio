@@ -25,8 +25,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    alert('Thank you for your message! I will get back to you soon.');
+    alert('Neural message transmitted. Expect contact via secure channel.');
     setFormData({
       firstName: '',
       lastName: '',
@@ -37,128 +36,151 @@ const Contact = () => {
   };
 
   const handleSocialClick = (platform: string) => {
-    alert(`${platform} profile would be linked here. Contact for actual links.`);
+    alert(`Accessing ${platform} neural network. Biometric verification required.`);
   };
 
   return (
     <section id="contact" className="py-20 bg-black text-white relative overflow-hidden">
-      {/* Enhanced futuristic background patterns */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 animate-[aurora_20s_ease-in-out_infinite]" style={{
+      {/* Cyberpunk aurora background */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 animate-neural-aurora" style={{
           backgroundImage: `
-            radial-gradient(circle at 20% 80%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
-            radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.15) 0%, transparent 50%),
-            radial-gradient(circle at 40% 40%, rgba(6, 182, 212, 0.1) 0%, transparent 50%)
+            radial-gradient(circle at 20% 80%, rgba(255, 0, 255, 0.15) 0%, transparent 50%),
+            radial-gradient(circle at 80% 20%, rgba(0, 255, 255, 0.15) 0%, transparent 50%),
+            radial-gradient(circle at 40% 40%, rgba(255, 255, 0, 0.1) 0%, transparent 50%)
           `
         }}></div>
       </div>
       
-      {/* Enhanced animated tech elements */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-20 left-10 w-32 h-32 border border-purple-400/30 rounded-lg rotate-45 animate-[float-rotate_30s_ease-in-out_infinite] shadow-[0_0_30px_rgba(168,85,247,0.3)]"></div>
-        <div className="absolute bottom-20 right-10 w-24 h-24 border border-pink-400/30 rounded-full animate-[float-slow_35s_ease-in-out_infinite] shadow-[0_0_25px_rgba(236,72,153,0.3)]"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-cyan-400/20 rounded-full animate-[pulse_8s_ease-in-out_infinite] shadow-[0_0_50px_rgba(6,182,212,0.2)]"></div>
+      {/* Neural network visualization */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-20 left-10 w-40 h-40 border-2 border-magenta-400/30 rounded-lg rotate-45 animate-neural-construct shadow-[0_0_30px_rgba(255,0,255,0.3)]"></div>
+        <div className="absolute bottom-20 right-10 w-32 h-32 border-2 border-cyan-400/30 rounded-full animate-neural-orbit shadow-[0_0_25px_rgba(0,255,255,0.3)]"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 border-2 border-yellow-400/20 rounded-full animate-neural-pulse shadow-[0_0_50px_rgba(255,255,0,0.2)]"></div>
         
-        {/* Additional floating elements */}
-        <div className="absolute top-1/4 right-1/4 w-16 h-16 border border-green-400/25 rotate-12 animate-[float-rotate_40s_ease-in-out_infinite_reverse] shadow-[0_0_20px_rgba(34,197,94,0.25)]"></div>
-        <div className="absolute bottom-1/3 left-1/5 w-12 h-12 border border-blue-400/30 rounded-full animate-[orbit_45s_linear_infinite] shadow-[0_0_18px_rgba(59,130,246,0.3)]"></div>
+        {/* Additional neural constructs */}
+        <div className="absolute top-1/4 right-1/4 w-20 h-20 border-2 border-green-400/25 rotate-12 animate-neural-rotate shadow-[0_0_20px_rgba(0,255,0,0.25)]"></div>
+        <div className="absolute bottom-1/3 left-1/5 w-16 h-16 border-2 border-blue-400/30 rounded-full animate-neural-drift shadow-[0_0_18px_rgba(0,100,255,0.3)]"></div>
+        
+        {/* Data streams */}
+        <div className="absolute top-10 left-1/3 w-1 h-32 bg-gradient-to-b from-cyan-400/40 to-transparent animate-data-stream shadow-[0_0_8px_rgba(0,255,255,0.4)]"></div>
+        <div className="absolute bottom-20 right-1/4 w-1 h-24 bg-gradient-to-b from-magenta-400/40 to-transparent animate-data-stream-reverse shadow-[0_0_8px_rgba(255,0,255,0.4)]"></div>
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(168,85,247,0.5)] animate-[fade-slide-up_1s_ease-out]">
-            Get In Touch
+          <h2 className="text-4xl md:text-5xl font-mono font-bold mb-4 bg-gradient-to-r from-magenta-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(255,0,255,0.5)] animate-title-glitch relative">
+            <span className="relative">
+              NEURAL INTERFACE
+              <div className="absolute inset-0 bg-gradient-to-r from-magenta-400 to-cyan-400 bg-clip-text text-transparent animate-text-corruption opacity-20"></div>
+            </span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto backdrop-blur-sm bg-black/20 p-4 rounded-lg border border-gray-700/30 animate-[fade-slide-up_1s_ease-out_0.3s_both] transition-all duration-500 hover:bg-black/30 hover:border-gray-600/40">
-            Ready to secure your organization? Let's discuss how we can work together.
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto backdrop-blur-sm bg-black/40 p-4 rounded-lg border border-cyan-400/30 animate-text-fade font-mono transition-all duration-500 hover:bg-black/60 hover:border-magenta-400/40">
+            READY TO SECURE YOUR NEURAL NETWORK? INITIATE CONTACT PROTOCOL.
           </p>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
-            <div className="backdrop-blur-sm bg-black/20 p-6 rounded-lg border border-gray-700/30 shadow-[0_0_30px_rgba(0,0,0,0.5)] animate-[fade-slide-up_1s_ease-out_0.5s_both] transition-all duration-500 hover:bg-black/30 hover:border-gray-600/40 hover:scale-105">
-              <h3 className="text-2xl font-semibold mb-6 text-cyan-400 drop-shadow-[0_0_10px_rgba(6,182,212,0.5)]">Contact Information</h3>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-4 p-3 rounded-lg bg-black/30 backdrop-blur-sm border border-gray-700/30 hover:border-cyan-400/30 transition-all duration-500 hover:shadow-[0_0_20px_rgba(6,182,212,0.2)] hover:scale-105 hover:-translate-y-1">
-                  <div className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center border border-cyan-500/30 shadow-[0_0_20px_rgba(6,182,212,0.3)] transition-all duration-300 hover:scale-110">
-                    <Mail className="w-6 h-6 text-cyan-400 drop-shadow-[0_0_10px_rgba(6,182,212,0.8)]" />
+            <div className="backdrop-blur-sm bg-black/40 p-6 rounded-lg border-2 border-cyan-400/50 shadow-[0_0_30px_rgba(0,255,255,0.3)] animate-contact-boot transition-all duration-500 hover:bg-black/60 hover:border-magenta-400/50 hover:scale-105 relative overflow-hidden">
+              {/* Neural grid overlay */}
+              <div className="absolute inset-0 opacity-10 animate-subtle-glitch" style={{
+                backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,255,255,0.1) 10px, rgba(0,255,255,0.1) 20px)',
+              }}></div>
+              
+              <h3 className="text-2xl font-mono font-semibold mb-6 text-cyan-400 drop-shadow-[0_0_10px_rgba(0,255,255,0.5)] relative z-10">CONTACT PROTOCOLS</h3>
+              <div className="space-y-4 relative z-10">
+                <div className="flex items-center space-x-4 p-4 rounded-lg bg-black/60 backdrop-blur-sm border-2 border-cyan-400/30 hover:border-cyan-400/50 transition-all duration-500 hover:shadow-[0_0_20px_rgba(0,255,255,0.3)] hover:scale-105 hover:-translate-y-1 animate-contact-item">
+                  <div className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center border-2 border-cyan-500/50 shadow-[0_0_20px_rgba(0,255,255,0.4)] transition-all duration-300 hover:scale-110 animate-icon-pulse">
+                    <Mail className="w-6 h-6 text-cyan-400 drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]" />
                   </div>
                   <div>
-                    <p className="text-gray-400">Email</p>
-                    <p className="text-white">security@example.com</p>
+                    <p className="text-gray-500 font-mono text-sm uppercase tracking-wider">Neural Mail</p>
+                    <p className="text-white font-mono">neural@cyberpunk.net</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center space-x-4 p-3 rounded-lg bg-black/30 backdrop-blur-sm border border-gray-700/30 hover:border-green-400/30 transition-all duration-500 hover:shadow-[0_0_20px_rgba(34,197,94,0.2)] hover:scale-105 hover:-translate-y-1">
-                  <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center border border-green-500/30 shadow-[0_0_20px_rgba(34,197,94,0.3)] transition-all duration-300 hover:scale-110">
-                    <Phone className="w-6 h-6 text-green-400 drop-shadow-[0_0_10px_rgba(34,197,94,0.8)]" />
+                <div className="flex items-center space-x-4 p-4 rounded-lg bg-black/60 backdrop-blur-sm border-2 border-green-400/30 hover:border-green-400/50 transition-all duration-500 hover:shadow-[0_0_20px_rgba(0,255,0,0.3)] hover:scale-105 hover:-translate-y-1 animate-contact-item" style={{ animationDelay: '0.1s' }}>
+                  <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center border-2 border-green-500/50 shadow-[0_0_20px_rgba(0,255,0,0.4)] transition-all duration-300 hover:scale-110 animate-icon-pulse">
+                    <Phone className="w-6 h-6 text-green-400 drop-shadow-[0_0_10px_rgba(0,255,0,0.8)]" />
                   </div>
                   <div>
-                    <p className="text-gray-400">Phone</p>
-                    <p className="text-white">+1 (555) 123-4567</p>
+                    <p className="text-gray-500 font-mono text-sm uppercase tracking-wider">Neural Link</p>
+                    <p className="text-white font-mono">+1 (555) 2077-HACK</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center space-x-4 p-3 rounded-lg bg-black/30 backdrop-blur-sm border border-gray-700/30 hover:border-purple-400/30 transition-all duration-500 hover:shadow-[0_0_20px_rgba(168,85,247,0.2)] hover:scale-105 hover:-translate-y-1">
-                  <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center border border-purple-500/30 shadow-[0_0_20px_rgba(168,85,247,0.3)] transition-all duration-300 hover:scale-110">
-                    <MapPin className="w-6 h-6 text-purple-400 drop-shadow-[0_0_10px_rgba(168,85,247,0.8)]" />
+                <div className="flex items-center space-x-4 p-4 rounded-lg bg-black/60 backdrop-blur-sm border-2 border-magenta-400/30 hover:border-magenta-400/50 transition-all duration-500 hover:shadow-[0_0_20px_rgba(255,0,255,0.3)] hover:scale-105 hover:-translate-y-1 animate-contact-item" style={{ animationDelay: '0.2s' }}>
+                  <div className="w-12 h-12 bg-magenta-500/20 rounded-lg flex items-center justify-center border-2 border-magenta-500/50 shadow-[0_0_20px_rgba(255,0,255,0.4)] transition-all duration-300 hover:scale-110 animate-icon-pulse">
+                    <MapPin className="w-6 h-6 text-magenta-400 drop-shadow-[0_0_10px_rgba(255,0,255,0.8)]" />
                   </div>
                   <div>
-                    <p className="text-gray-400">Location</p>
-                    <p className="text-white">Available Remote & On-site</p>
+                    <p className="text-gray-500 font-mono text-sm uppercase tracking-wider">Physical Location</p>
+                    <p className="text-white font-mono">Night City // Remote Access</p>
                   </div>
                 </div>
               </div>
             </div>
             
-            {/* Social Links */}
-            <div className="backdrop-blur-sm bg-black/20 p-6 rounded-lg border border-gray-700/30 shadow-[0_0_30px_rgba(0,0,0,0.5)] animate-[fade-slide-up_1s_ease-out_0.7s_both] transition-all duration-500 hover:bg-black/30 hover:border-gray-600/40 hover:scale-105">
-              <h3 className="text-2xl font-semibold mb-6 text-cyan-400 drop-shadow-[0_0_10px_rgba(6,182,212,0.5)]">Connect With Me</h3>
-              <div className="flex space-x-4">
+            {/* Social Neural Links */}
+            <div className="backdrop-blur-sm bg-black/40 p-6 rounded-lg border-2 border-magenta-400/50 shadow-[0_0_30px_rgba(255,0,255,0.3)] animate-contact-boot transition-all duration-500 hover:bg-black/60 hover:border-cyan-400/50 hover:scale-105 relative overflow-hidden" style={{ animationDelay: '0.3s' }}>
+              {/* Neural grid overlay */}
+              <div className="absolute inset-0 opacity-10 animate-neural-grid" style={{
+                backgroundImage: 'repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255,0,255,0.1) 10px, rgba(255,0,255,0.1) 20px)',
+              }}></div>
+              
+              <h3 className="text-2xl font-mono font-semibold mb-6 text-magenta-400 drop-shadow-[0_0_10px_rgba(255,0,255,0.5)] relative z-10">NEURAL NETWORKS</h3>
+              <div className="flex space-x-4 relative z-10">
                 <button 
                   onClick={() => handleSocialClick('LinkedIn')}
-                  className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center hover:bg-blue-500/30 transition-all duration-500 group border border-blue-500/30 hover:scale-110 shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] transform hover:-translate-y-1"
+                  className="w-14 h-14 bg-blue-500/20 rounded-lg flex items-center justify-center hover:bg-blue-500/30 transition-all duration-500 group border-2 border-blue-500/50 hover:scale-110 shadow-[0_0_20px_rgba(0,100,255,0.3)] hover:shadow-[0_0_30px_rgba(0,100,255,0.5)] transform hover:-translate-y-1 animate-social-pulse"
                 >
-                  <Linkedin className="w-6 h-6 text-blue-400 group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(59,130,246,0.8)]" />
+                  <Linkedin className="w-6 h-6 text-blue-400 group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(0,100,255,0.8)]" />
                 </button>
                 <button 
                   onClick={() => handleSocialClick('GitHub')}
-                  className="w-12 h-12 bg-gray-500/20 rounded-lg flex items-center justify-center hover:bg-gray-500/30 transition-all duration-500 group border border-gray-500/30 hover:scale-110 shadow-[0_0_20px_rgba(107,114,128,0.3)] hover:shadow-[0_0_30px_rgba(107,114,128,0.5)] transform hover:-translate-y-1"
+                  className="w-14 h-14 bg-gray-500/20 rounded-lg flex items-center justify-center hover:bg-gray-500/30 transition-all duration-500 group border-2 border-gray-500/50 hover:scale-110 shadow-[0_0_20px_rgba(107,114,128,0.3)] hover:shadow-[0_0_30px_rgba(107,114,128,0.5)] transform hover:-translate-y-1 animate-social-pulse" style={{ animationDelay: '0.1s' }}
                 >
                   <Github className="w-6 h-6 text-gray-400 group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(107,114,128,0.8)]" />
                 </button>
                 <button 
                   onClick={() => handleSocialClick('Twitter')}
-                  className="w-12 h-12 bg-sky-500/20 rounded-lg flex items-center justify-center hover:bg-sky-500/30 transition-all duration-500 group border border-sky-500/30 hover:scale-110 shadow-[0_0_20px_rgba(14,165,233,0.3)] hover:shadow-[0_0_30px_rgba(14,165,233,0.5)] transform hover:-translate-y-1"
+                  className="w-14 h-14 bg-cyan-500/20 rounded-lg flex items-center justify-center hover:bg-cyan-500/30 transition-all duration-500 group border-2 border-cyan-500/50 hover:scale-110 shadow-[0_0_20px_rgba(0,255,255,0.3)] hover:shadow-[0_0_30px_rgba(0,255,255,0.5)] transform hover:-translate-y-1 animate-social-pulse" style={{ animationDelay: '0.2s' }}
                 >
-                  <Twitter className="w-6 h-6 text-sky-400 group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(14,165,233,0.8)]" />
+                  <Twitter className="w-6 h-6 text-cyan-400 group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]" />
                 </button>
               </div>
             </div>
           </div>
           
-          {/* Contact Form */}
-          <Card className="bg-black/40 backdrop-blur-sm border-gray-700/50 shadow-2xl border-2 hover:border-cyan-400/30 hover:shadow-[0_0_50px_rgba(6,182,212,0.2)] transition-all duration-500 animate-[fade-slide-up_1s_ease-out_0.9s_both] hover:scale-105">
-            <CardHeader>
-              <CardTitle className="text-white text-2xl drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">Send a Message</CardTitle>
+          {/* Neural Contact Form */}
+          <Card className="bg-black/60 backdrop-blur-sm border-2 border-yellow-400/50 shadow-2xl hover:border-cyan-400/50 hover:shadow-[0_0_50px_rgba(255,255,0,0.3)] transition-all duration-500 animate-form-boot hover:scale-105 relative overflow-hidden" style={{ animationDelay: '0.5s' }}>
+            {/* Form neural overlay */}
+            <div className="absolute inset-0 opacity-5 animate-neural-corruption" style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFFF00' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+              backgroundSize: '60px 60px'
+            }}></div>
+            
+            <CardHeader className="relative z-10">
+              <CardTitle className="text-white text-2xl drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] font-mono uppercase tracking-wider">NEURAL TRANSMISSION</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-4 relative z-10">
               <form onSubmit={handleSubmit}>
                 <div className="grid grid-cols-2 gap-4 mb-4">
                   <Input 
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleInputChange}
-                    placeholder="First Name" 
-                    className="bg-black/40 backdrop-blur-sm border-gray-600/50 text-white placeholder:text-gray-500 hover:border-cyan-400/30 focus:border-cyan-400/50 transition-all duration-500 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] hover:shadow-[0_0_15px_rgba(6,182,212,0.1)]" 
+                    placeholder="First.Name" 
+                    className="bg-black/60 backdrop-blur-sm border-2 border-cyan-400/50 text-white placeholder:text-gray-500 hover:border-cyan-400/70 focus:border-cyan-400/90 transition-all duration-500 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] hover:shadow-[0_0_15px_rgba(0,255,255,0.2)] font-mono" 
                   />
                   <Input 
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleInputChange}
-                    placeholder="Last Name" 
-                    className="bg-black/40 backdrop-blur-sm border-gray-600/50 text-white placeholder:text-gray-500 hover:border-cyan-400/30 focus:border-cyan-400/50 transition-all duration-500 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] hover:shadow-[0_0_15px_rgba(6,182,212,0.1)]" 
+                    placeholder="Last.Name" 
+                    className="bg-black/60 backdrop-blur-sm border-2 border-cyan-400/50 text-white placeholder:text-gray-500 hover:border-cyan-400/70 focus:border-cyan-400/90 transition-all duration-500 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] hover:shadow-[0_0_15px_rgba(0,255,255,0.2)] font-mono" 
                   />
                 </div>
                 <Input 
@@ -166,28 +188,28 @@ const Contact = () => {
                   type="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  placeholder="Email Address" 
-                  className="bg-black/40 backdrop-blur-sm border-gray-600/50 text-white placeholder:text-gray-500 hover:border-cyan-400/30 focus:border-cyan-400/50 transition-all duration-500 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] hover:shadow-[0_0_15px_rgba(6,182,212,0.1)] mb-4" 
+                  placeholder="neural.address@net" 
+                  className="bg-black/60 backdrop-blur-sm border-2 border-cyan-400/50 text-white placeholder:text-gray-500 hover:border-cyan-400/70 focus:border-cyan-400/90 transition-all duration-500 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] hover:shadow-[0_0_15px_rgba(0,255,255,0.2)] font-mono mb-4" 
                 />
                 <Input 
                   name="subject"
                   value={formData.subject}
                   onChange={handleInputChange}
-                  placeholder="Subject" 
-                  className="bg-black/40 backdrop-blur-sm border-gray-600/50 text-white placeholder:text-gray-500 hover:border-cyan-400/30 focus:border-cyan-400/50 transition-all duration-500 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] hover:shadow-[0_0_15px_rgba(6,182,212,0.1)] mb-4" 
+                  placeholder="transmission.subject" 
+                  className="bg-black/60 backdrop-blur-sm border-2 border-cyan-400/50 text-white placeholder:text-gray-500 hover:border-cyan-400/70 focus:border-cyan-400/90 transition-all duration-500 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] hover:shadow-[0_0_15px_rgba(0,255,255,0.2)] font-mono mb-4" 
                 />
                 <Textarea 
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  placeholder="Your message..." 
-                  className="bg-black/40 backdrop-blur-sm border-gray-600/50 text-white placeholder:text-gray-500 min-h-[120px] hover:border-cyan-400/30 focus:border-cyan-400/50 transition-all duration-500 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] hover:shadow-[0_0_15px_rgba(6,182,212,0.1)] mb-4" 
+                  placeholder="Enter neural message data..." 
+                  className="bg-black/60 backdrop-blur-sm border-2 border-cyan-400/50 text-white placeholder:text-gray-500 min-h-[120px] hover:border-cyan-400/70 focus:border-cyan-400/90 transition-all duration-500 shadow-[inset_0_0_10px_rgba(0,0,0,0.5)] hover:shadow-[0_0_15px_rgba(0,255,255,0.2)] font-mono mb-4" 
                 />
                 <Button 
                   type="submit"
-                  className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white font-semibold py-3 rounded-lg transition-all duration-500 hover:scale-105 shadow-[0_0_30px_rgba(6,182,212,0.4)] border border-cyan-400/30 backdrop-blur-sm hover:shadow-[0_0_50px_rgba(6,182,212,0.6)] transform hover:-translate-y-1"
+                  className="w-full bg-gradient-to-r from-cyan-600 to-magenta-600 hover:from-cyan-700 hover:to-magenta-700 text-white font-mono font-semibold py-4 rounded-lg transition-all duration-500 hover:scale-105 shadow-[0_0_30px_rgba(0,255,255,0.4)] border-2 border-cyan-400/50 backdrop-blur-sm hover:shadow-[0_0_50px_rgba(255,0,255,0.6)] transform hover:-translate-y-1 uppercase tracking-wider animate-button-pulse"
                 >
-                  Send Message
+                  >> TRANSMIT NEURAL DATA
                 </Button>
               </form>
             </CardContent>
