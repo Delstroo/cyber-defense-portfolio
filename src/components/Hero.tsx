@@ -1,6 +1,7 @@
 
 import { Shield, Terminal, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -71,6 +72,26 @@ const Hero = () => {
       </div>
       
       <div className="container mx-auto px-6 text-center relative z-10">
+        {/* Portfolio Photo Section */}
+        <div className="mb-12 flex justify-center animate-[fade-slide-up_1s_ease-out]">
+          <div className="relative group">
+            <div className="absolute -inset-4 bg-gradient-to-r from-cyan-400/20 via-blue-400/20 to-teal-400/20 rounded-full blur-lg animate-[pulse_3s_ease-in-out_infinite] group-hover:blur-xl transition-all duration-500"></div>
+            <div className="relative p-2 rounded-full bg-black/40 backdrop-blur-sm border-2 border-cyan-400/30 shadow-[0_0_50px_rgba(6,182,212,0.3)] hover:shadow-[0_0_80px_rgba(6,182,212,0.5)] transition-all duration-500 hover:scale-105">
+              <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-gradient-to-r from-cyan-400/50 to-blue-400/50">
+                <AvatarImage 
+                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face" 
+                  alt="Professional headshot"
+                  className="object-cover transition-all duration-500 group-hover:scale-110"
+                />
+                <AvatarFallback className="bg-gradient-to-br from-cyan-400/20 to-blue-400/20 text-cyan-400 text-2xl font-bold border-2 border-cyan-400/30">
+                  CS
+                </AvatarFallback>
+              </Avatar>
+            </div>
+            <div className="absolute top-0 right-0 w-4 h-4 bg-green-400 rounded-full animate-[pulse_2s_ease-in-out_infinite] shadow-[0_0_15px_rgba(34,197,94,0.8)] border-2 border-black"></div>
+          </div>
+        </div>
+
         <div className="mb-8 flex justify-center space-x-4">
           <div className="p-4 rounded-full bg-black/30 backdrop-blur-sm border border-cyan-400/30 shadow-[0_0_30px_rgba(6,182,212,0.3)] hover:scale-110 transition-all duration-500 hover:shadow-[0_0_50px_rgba(6,182,212,0.5)]">
             <Shield className="w-12 h-12 text-cyan-400 animate-[pulse_2s_ease-in-out_infinite] drop-shadow-[0_0_10px_rgba(6,182,212,0.8)]" />
