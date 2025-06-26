@@ -7,7 +7,12 @@ const Skills = () => {
     {
       title: "Threat Detection",
       icon: Eye,
-      skills: ["SIEM Analytics", "Malware Analysis", "Threat Intelligence", "Behavioral Analytics"],
+      skills: [
+        "SIEM Implementation (Splunk)",
+        "Log Analysis",
+        "Network Traffic Analysis (Wireshark)",
+        "Anomaly Detection"
+      ],
       color: "text-red-400",
       glowColor: "rgba(255, 0, 0, 0.4)",
       borderColor: "border-red-400/50"
@@ -15,7 +20,12 @@ const Skills = () => {
     {
       title: "Security Architecture",
       icon: Shield,
-      skills: ["Zero-Trust Design", "Network Security", "Cloud Security", "Risk Assessment"],
+      skills: [
+        "Secure Coding Practices",
+        "Vulnerability Management",
+        "System Hardening",
+        "Firewall & Access-List Configuration"
+      ],
       color: "text-cyan-400",
       glowColor: "rgba(0, 255, 255, 0.4)",
       borderColor: "border-cyan-400/50"
@@ -23,15 +33,25 @@ const Skills = () => {
     {
       title: "Incident Response",
       icon: AlertTriangle,
-      skills: ["Crisis Management", "Forensics", "Recovery Planning", "Communication"],
+      skills: [
+        "Incident Resolution",
+        "Root Cause Analysis",
+        "Digital Forensics Principles",
+        "Security Incident Reporting"
+      ],
       color: "text-yellow-400",
       glowColor: "rgba(255, 255, 0, 0.4)",
       borderColor: "border-yellow-400/50"
     },
     {
-      title: "Penetration Testing",
+      title: "Network Infrastructure",
       icon: Terminal,
-      skills: ["Vulnerability Assessment", "Web App Testing", "Network Pentesting", "Social Engineering"],
+      skills: [
+        "TCP/IP & OSI Model",
+        "Cisco Networking Concepts",
+        "LAN/WAN/Wireless",
+        "VPNs (IPsec Tunnels)"
+      ],
       color: "text-green-400",
       glowColor: "rgba(0, 255, 0, 0.4)",
       borderColor: "border-green-400/50"
@@ -39,7 +59,12 @@ const Skills = () => {
     {
       title: "Compliance",
       icon: Lock,
-      skills: ["GDPR Compliance", "SOX Auditing", "HIPAA Security", "ISO 27001", "Risk Management"],
+      skills: [
+        "OWASP Top 10",
+        "MITRE ATT&CK Framework",
+        "Security Best Practices Adherence",
+        "Process Documentation"
+      ],
       color: "text-blue-400",
       glowColor: "rgba(0, 100, 255, 0.4)",
       borderColor: "border-blue-400/50"
@@ -47,7 +72,12 @@ const Skills = () => {
     {
       title: "Development",
       icon: Code,
-      skills: ["Python Scripting", "PowerShell", "Linux Administration", "Security Tools", "API Development"],
+      skills: [
+        "Python Scripting",
+        "Swift",
+        "Git Version Control",
+        "Web Development (HTML/CSS/JavaScript)"
+      ],
       color: "text-purple-400",
       glowColor: "rgba(128, 0, 255, 0.4)",
       borderColor: "border-purple-400/50"
@@ -81,7 +111,7 @@ const Skills = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent drop-shadow-lg animate-subtle-glitch">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text   drop-shadow-lg animate-subtle-glitch">
             Technical Skills
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto backdrop-blur-sm bg-black/40 p-4 rounded-lg border border-cyan-400/20 animate-fade-up transition-all duration-700 hover:bg-black/60 hover:border-purple-400/30">

@@ -13,9 +13,11 @@ const Hero = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent('Professional Resume - Contact for full version');
-    link.download = 'resume.pdf';
+    link.href = 'assets/Resume.pdf';
+    link.download = 'DelstunMcCray_Resume.pdf';
+    document.body.appendChild(link);
     link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -51,7 +53,7 @@ const Hero = () => {
             <div className="relative p-2 rounded-full bg-black/60 backdrop-blur-sm border-2 border-cyan-400/20 shadow-[0_0_20px_rgba(0,255,255,0.2)] hover:shadow-[0_0_30px_rgba(0,100,255,0.3)] transition-all duration-700 hover:scale-105">
               <Avatar className="w-32 h-32 md:w-40 md:h-40 border-2 border-cyan-400/20">
                 <AvatarImage 
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face" 
+                  src="assets/headshot.png" 
                   alt="Professional Profile"
                   className="object-cover transition-all duration-700 group-hover:scale-105"
                 />
@@ -68,27 +70,33 @@ const Hero = () => {
         <div className="mb-8 flex justify-center space-x-6">
           <div className="p-3 rounded-lg bg-black/40 backdrop-blur-sm border border-cyan-400/30 shadow-lg hover:scale-110 transition-all duration-500 hover:shadow-cyan-400/20 animate-tech-float-1">
             <Shield className="w-10 h-10 text-cyan-400" />
-            <div className="text-xs text-cyan-400 mt-1 font-mono">Security</div>
+            <div className="text-xs text-cyan-400 mt-1 font-mono"></div>
           </div>
           <div className="p-3 rounded-lg bg-black/40 backdrop-blur-sm border border-blue-400/30 shadow-lg hover:scale-110 transition-all duration-500 hover:shadow-blue-400/20 animate-tech-float-2">
             <Terminal className="w-10 h-10 text-blue-400" />
-            <div className="text-xs text-blue-400 mt-1 font-mono">Terminal</div>
+            <div className="text-xs text-blue-400 mt-1 font-mono"></div>
           </div>
           <div className="p-3 rounded-lg bg-black/40 backdrop-blur-sm border border-purple-400/30 shadow-lg hover:scale-110 transition-all duration-500 hover:shadow-purple-400/20 animate-tech-float-3">
             <Lock className="w-10 h-10 text-purple-400" />
-            <div className="text-xs text-purple-400 mt-1 font-mono">Encryption</div>
+            <div className="text-xs text-purple-400 mt-1 font-mono"></div>
           </div>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent animate-subtle-glitch drop-shadow-2xl">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text animate-subtle-glitch drop-shadow-2xl">
           <span className="relative font-sans">
-            Full Stack Developer
+            Delstun McCray
           </span>
         </h1>
+
+        <h2 className="text-5xl md:text-5xl font-bold mb-5 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text animate-subtle-glitch drop-shadow-2xl">
+          <span className="relative font-sans">
+            Cyber Security Specialist
+          </span>
+        </h2>
         
         <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto animate-fade-up backdrop-blur-sm bg-black/20 p-6 rounded-lg border border-cyan-400/20 transition-all duration-700 hover:bg-black/30 hover:border-blue-400/30">
           <span className="relative z-10">
-            Building secure, scalable applications with modern technologies and cybersecurity best practices
+          Building secure, scalable IT systems and networks with modern technologies and cybersecurity best practices
           </span>
         </p>
         

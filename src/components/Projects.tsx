@@ -7,49 +7,38 @@ import { ExternalLink, Github, Shield, Zap, Lock } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Neural SIEM Matrix",
-      description: "Quantum-enhanced security monitoring system with AI threat prediction. Reduced response time by 80% using neural network pattern recognition and predictive algorithms.",
-      technologies: ["Quantum Splunk", "Neural ELK", "Python 3.9", "Neural PowerShell"],
-      icon: Shield,
-      category: "Neural Operations",
-      glowColor: "rgba(0, 255, 255, 0.4)",
-      borderColor: "border-cyan-400/50",
-      demoUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Zero-Trust Neural Net",
-      description: "Complete neural network security overhaul with biometric verification, quantum encryption, and AI-powered micro-segmentation protocols.",
-      technologies: ["Azure Neural", "Quantum Okta", "Palo Alto AI", "Neural Terraform"],
-      icon: Lock,
-      category: "Network Fortress",
-      glowColor: "rgba(0, 100, 255, 0.4)",
-      borderColor: "border-blue-400/50",
-      demoUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Automated Defense Grid",
-      description: "AI-powered automated incident response with quantum threat containment and neural network remediation protocols. Self-healing security infrastructure.",
-      technologies: ["Python Neural", "Quantum APIs", "Neural Docker", "AI Kubernetes"],
-      icon: Zap,
-      category: "AI Automation",
-      glowColor: "rgba(255, 255, 0, 0.4)",
-      borderColor: "border-yellow-400/50",
-      demoUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Cloud Security Scanner",
-      description: "Quantum-enhanced security assessment tool for multi-cloud environments with AI vulnerability detection and neural compliance monitoring.",
-      technologies: ["Neural Python", "Quantum AWS", "AI Azure", "Neural Terraform"],
-      icon: Shield,
-      category: "Cloud Defense",
-      glowColor: "rgba(0, 255, 0, 0.4)",
-      borderColor: "border-green-400/50",
-      demoUrl: "#",
-      githubUrl: "#"
-    }
+        title: "SIEM Implementation Lab",
+        description: "Virtual security lab using Kali and Windows/Linux VMs with Splunk SIEM. Developed detection rules, dashboards, and validated alerts via simulated attacks like Nmap scans and login failures.",
+        technologies: ["Splunk", "VirtualBox", "Kali Linux", "Windows 10", "Syslog"],
+        icon: Shield,
+        category: "Threat Detection",
+        glowColor: "rgba(255, 100, 0, 0.4)",
+        borderColor: "border-orange-400/50",
+        demoUrl: "#",
+        githubUrl: "#"
+      },
+      {
+        title: "Vulnerability Assessment",
+        description: "Performed vulnerability scans with Nessus against Metasploitable VMs. Created remediation reports outlining critical flaws, SQLi/XSS risks, and mitigation strategies.",
+        technologies: ["Nessus", "Metasploitable", "OpenVAS", "Vulnerability Scoring", "Reporting"],
+        icon: Lock,
+        category: "Offensive Security",
+        glowColor: "rgba(255, 0, 100, 0.4)",
+        borderColor: "border-pink-400/50",
+        demoUrl: "#",
+        githubUrl: "#"
+      },
+      {
+        title: "Network Traffic Analysis",
+        description: "Captured and dissected traffic with Wireshark to identify anomalies, clear-text credentials, and indicators of compromise. Proposed network segmentation and IDS rules.",
+        technologies: ["Wireshark", "TCP/IP", "DNS", "HTTP", "Packet Analysis"],
+        icon: Zap,
+        category: "Blue Teaming",
+        glowColor: "rgba(0, 150, 255, 0.4)",
+        borderColor: "border-sky-400/50",
+        demoUrl: "#",
+        githubUrl: "#"
+      }
   ];
 
   const handleProjectAction = (url: string, action: string) => {
@@ -83,10 +72,10 @@ const Projects = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-mono font-bold mb-4 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(0,255,0,0.5)] animate-title-glitch relative">
+          <h2 className="text-4xl md:text-5xl font-mono font-bold mb-4 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text drop-shadow-[0_0_30px_rgba(0,255,0,0.5)] animate-title-glitch relative">
             <span className="relative">
-              NEURAL PROJECTS
-              <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent animate-text-corruption opacity-20"></div>
+              PROJECTS
+              <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text   animate-text-corruption opacity-20"></div>
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto backdrop-blur-sm bg-black/40 p-4 rounded-lg border border-cyan-400/30 animate-text-fade font-mono transition-all duration-500 hover:bg-black/60 hover:border-magenta-400/40">
