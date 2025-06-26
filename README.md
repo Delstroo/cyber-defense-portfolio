@@ -11,7 +11,7 @@ A responsive portfolio showcasing cybersecurity projects and technical skills, b
 ## 🛠 Getting Started
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Delstroo/cyber-defense-portfolio
 cd cyber-defense-portfolio
 npm install
 npm run dev
