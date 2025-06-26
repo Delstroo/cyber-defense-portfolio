@@ -36,7 +36,8 @@ const Contact = () => {
   };
 
   const handleSocialClick = (platform: string) => {
-    alert(`Opening ${platform} profile...`);
+    window.location.href = platform;
+
   };
 
   return (
@@ -53,10 +54,10 @@ const Contact = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent drop-shadow-lg animate-title-glitch">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text   drop-shadow-lg animate-title-glitch">
             <span className="relative">
               Get In Touch
-              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent animate-text-corruption opacity-20"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text   animate-text-corruption opacity-20"></div>
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto backdrop-blur-sm bg-black/20 p-4 rounded-lg border border-cyan-400/20 animate-text-fade transition-all duration-500 hover:bg-black/30 hover:border-blue-400/30">
@@ -76,7 +77,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Email</p>
-                    <p className="text-white">contact@example.com</p>
+                    <p className="text-white">delstunmccray@gmail.com</p>
                   </div>
                 </div>
                 
@@ -86,7 +87,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Phone</p>
-                    <p className="text-white">+1 (555) 123-4567</p>
+                    <p className="text-white">+1 (971) 323-9404</p>
                   </div>
                 </div>
                 
@@ -96,7 +97,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm">Location</p>
-                    <p className="text-white">San Francisco, CA</p>
+                    <p className="text-white">Ogden, UT</p>
                   </div>
                 </div>
               </div>
@@ -107,22 +108,16 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold mb-6 text-blue-400 drop-shadow-lg">Connect With Me</h3>
               <div className="flex space-x-4">
                 <button 
-                  onClick={() => handleSocialClick('LinkedIn')}
+                  onClick={() => handleSocialClick('https://www.linkedin.com/in/delstun-mccray/')}
                   className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center hover:bg-blue-500/30 transition-all duration-300 group border border-blue-500/30 hover:scale-110 shadow-lg transform hover:-translate-y-1 animate-social-pulse"
                 >
                   <Linkedin className="w-6 h-6 text-blue-400 group-hover:scale-110 transition-transform duration-300" />
                 </button>
                 <button 
-                  onClick={() => handleSocialClick('GitHub')}
+                  onClick={() => handleSocialClick('https://github.com/Delstroo')}
                   className="w-12 h-12 bg-gray-500/20 rounded-lg flex items-center justify-center hover:bg-gray-500/30 transition-all duration-300 group border border-gray-500/30 hover:scale-110 shadow-lg transform hover:-translate-y-1 animate-social-pulse" style={{ animationDelay: '0.1s' }}
                 >
                   <Github className="w-6 h-6 text-gray-400 group-hover:scale-110 transition-transform duration-300" />
-                </button>
-                <button 
-                  onClick={() => handleSocialClick('Twitter')}
-                  className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center hover:bg-cyan-500/30 transition-all duration-300 group border border-cyan-500/30 hover:scale-110 shadow-lg transform hover:-translate-y-1 animate-social-pulse" style={{ animationDelay: '0.2s' }}
-                >
-                  <Twitter className="w-6 h-6 text-cyan-400 group-hover:scale-110 transition-transform duration-300" />
                 </button>
               </div>
             </div>
