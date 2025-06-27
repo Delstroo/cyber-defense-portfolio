@@ -1,5 +1,6 @@
 {
   "name": "vite_react_shadcn_ts",
+  "homepage" : "https://delstroo.github.io/cyber-defense-portfolio/"
   "private": true,
   "version": "0.0.0",
   "type": "module",
