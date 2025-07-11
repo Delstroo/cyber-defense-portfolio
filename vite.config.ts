@@ -6,9 +6,11 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
+    base: "/cyber-defense-portfolio",
     host: "::",
     port: 8080,
   },
+  base: "/cyber-defense-portfolio",
   plugins: [
     react(),
     mode === 'development' &&
